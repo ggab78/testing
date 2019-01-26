@@ -1,9 +1,14 @@
 package com.gabriel;
 
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
 public class HelloWorldTest {
 
-    public void testGetHello() {
+    @Test
+    public void getHello() {
         HelloWorld helloWorld = new HelloWorld();
-        assert ("Hello World".equals(helloWorld.getHello()));
+        assertEquals("Hello World",helloWorld.getHello());
     }
 }
